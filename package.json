@@ -1,0 +1,37 @@
+{
+  "name": "ai-voice-note-action-extractor",
+  "version": "1.0.0",
+  "description": "Node.js CLI, Telegram bot and API that turns long executive voice notes into a prioritised, delegated task list with due dates, using Gemini audio with multi-model fallback.",
+  "type": "module",
+  "bin": {
+    "voice-tasks": "bin/voice-tasks.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node bin/voice-tasks.js serve",
+    "demo": "node bin/voice-tasks.js demo",
+    "doctor": "node bin/voice-tasks.js doctor",
+    "test": "node --test --test-reporter=spec \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "voice-notes",
+    "action-items",
+    "task-extraction",
+    "transcription",
+    "gemini",
+    "whisper",
+    "telegram-bot",
+    "executive-assistant",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}
